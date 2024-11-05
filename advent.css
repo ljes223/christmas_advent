@@ -1,1 +1,156 @@
 
+.calendar_grid {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-gap: 1rem;
+	grid-template-areas:
+		"title title title day1 day2 day3"
+		"title title title day4 day5 day6"
+		"title title title day7 day8 day9"
+		"day10 day11 day12 day13 day14 day15"
+		"day16 day17 day18 day19 day24 day24"
+		"day20 day21 day22 day23 day24 day24";
+}
+
+.title {
+	grid-area: title;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-style: dotted;
+}
+
+.title1 {
+	color: red;
+	display: block;
+}
+
+.title2 {
+	color: blue;
+	diplsay: block;
+}
+
+.title3 {
+	color: green;
+	diplay: block;
+}
+
+.day1 {
+	grid-area: day1;
+	border-style: dotted;
+}
+
+.day2 {
+	grid-area: day2;
+	border-style: dotted;
+}
+
+.day3 {
+	grid-area: day3;
+	border-style: dotted;
+}
+
+.day4 {
+	grid-area: day4;
+	border-style: dotted;
+}
+
+.day5 {
+	grid-area: day5;
+	border-style: dotted;
+}
+
+.day6 {
+	grid-area: day6;
+	border-style: dotted;
+}
+
+.day7 {
+	grid-area: day7;
+	border-style: dotted;
+}
+
+.day8 {
+	grid-area: day8;
+	border-style: dotted;
+}
+
+.day9 {
+	grid-area: day9;
+	border-style: dotted;
+}
+
+.day10 {
+	grid-area: day10;
+	border-style: dotted;
+}
+
+.day11 {
+	grid-area: day11;
+	border-style: dotted;
+}
+
+.day12 {
+	grid-area: day12;
+	border-style: dotted;
+}
+
+.day13 {
+	grid-area: day13;
+	border-style: dotted;
+}
+
+.day14 {
+	grid-area: day14;
+	border-style: dotted;
+}
+
+.day15 {
+	grid-area: day15;
+	border-style: dotted;
+}
+
+.day16 {
+	grid-area: day16;
+	border-style: dotted;
+}
+
+.day17 {
+	grid-area: day17;
+	border-style: dotted;
+}
+
+.day18 {
+	grid-area: day18;
+	border-style: dotted;
+}
+
+.day19 {
+	grid-area: day19;
+	border-style: dotted;
+}
+
+.day20 {
+	grid-area: day20;
+	border-style: dotted;
+}
+
+.day21 {
+	grid-area: day21;
+	border-style: dotted;
+}
+
+.day22 {
+	grid-area: day22;
+	border-style: dotted;
+}
+
+.day23 {
+	grid-area: day23;
+	border-style: dotted;
+}
+
+.day24 {
+	grid-area: day24;
+	border-style: dotted;
+}
