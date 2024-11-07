@@ -155,3 +155,39 @@
 .day24 {
 	grid-area: day24;
 }
+
+.popup {
+	width: 900px;
+	height: 400px;
+	background: white;
+	border-radius: 6px;
+	border-color: black;
+	border-style: solid;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+	padding: 0 30px 30px;
+	color: #333;
+}
+
+.popup img {
+	width: 100px;
+	margin-top: -50px;
+	border-radius: 50%;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.popup button {
+	width: 100px;
+	margin-top: 50px;
+	padding: 10px 0;
+	background: lightgrey;
+	border: 0;
+	outline: none;
+	font-size: 18px;
+	border-radius: 4px;
+	cursor: pointer;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
