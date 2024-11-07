@@ -56,6 +56,10 @@
   	font-weight: bold;
 }
 
+.day:hover {
+	background-color: #04AA6D;
+}
+
 .day1 {
 	grid-area: day1;
 }
