@@ -170,6 +170,8 @@
 	text-align: center;
 	padding: 0 30px 30px;
 	color: #333;
+	visibility: hidden;
+	transition: transform 0.7s, top 0.4s;
 }
 
 .popup img {
@@ -190,4 +192,10 @@
 	border-radius: 4px;
 	cursor: pointer;
 	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.open_popup {
+	visibility: visible;
+	top: 50%;
+	transform: translate(-50%, -50%) scale(1);
 }
