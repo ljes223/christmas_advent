@@ -1,2 +1,2 @@
-# chirstmas_advent
+# christmas_advent
 An HTML/CSS Christmas advent calendar!
