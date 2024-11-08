@@ -64,6 +64,31 @@ function dailyPopup(day) {
 	openPopup();
 	showMessage(day);
 }
+
+function showMessage(day) {
+	const currentDate = new Date();
+	const currentYear = currentDate.getFullYear();
+	const currentMonth = currentDate.getMonth();
+	const currentDay = currentDate.getDate();
+
+	if (currentYear === 2024 || currentYear > 2024)
+	{
+		if (currentMonth === 11 || currentYear > 2024)
+		{
+			if (currentDay === day || currentDay > day || currentYear > 2024)
+			{
+				message.textContent = messages[day - 1];
+				head.textContent = `Happy Day ${day} of Advent!`;
+			} else {
+				message.textContent = `Sorry, it's not Day ${day} yet!`;
+			}
+		} else {
+			message.textContent = `Sorry, it's not Day ${day} yet!`;
+		}
+	} else {
+		message.textContent = `Sorry, it's not Day ${day} yet!`;
+	}
+}
 	
 </script>
 
