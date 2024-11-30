@@ -43,6 +43,17 @@
 	text-align: center;
 }
 
+#head {
+	font-size: 18px;
+}
+
+#message {
+	margin: auto;
+	width: 70%;
+	text-align: center;
+	font-size: 17px;
+}
+
 .day {
 	border-style: dotted;
 	height: 100%;
