@@ -107,13 +107,21 @@ function showMessage(day) {
 
 	if (currentYear === 2024 || currentYear > 2024)
 	{
-		if (currentDay === day || currentDay > day)
+		title.textContent = `Day ${day}`
+		if (currentDay === day || currentDay > day || currentYear > 2024)
 		{
-			message.textContent = messages[day - 1];
-			head.textContent = `Happy Day ${day} of Advent!`;
+			if (day === 25) {
+				playMusic(day);
+				head.textContent = "Merry Christmas!";
+				message.textContent = messages[day - 1];
+			} else {
+				playMusic(day);
+				message.textContent = messages[day - 1];
+				head.textContent = `Happy Day ${day} of Advent!`;
+			}
 		} else {
 			message.textContent = "Come back soon!";
-			head.textContent = `Sorry, it's not Day ${day} yet!`;
+			head.textContent = `Sorry, it's not day ${day} yet!`;
 		}
 	} else {
 		message.textContent = "Sorry, it's not 2024 yet!";
@@ -121,7 +129,7 @@ function showMessage(day) {
 }
 
 const musicPaths = [
-		"mariah.mp3",
+		"example.mp3",
 		"music2",
 		"music3",
 		"music4",
