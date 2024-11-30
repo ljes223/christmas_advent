@@ -41,6 +41,8 @@
 		<button class="day day24" onclick="dailyPopup(24)">Day 24</button>
 		<button class="day day25" onclick="dailyPopup(25)">Day 25</button>
 		<div class="popup" id="pop">
+			<img src="example.png">
+			<h2 id="title"></h2>
 			<p id="head"></p>
 			<p id="message"></p>
 			<button class="close" onclick="closeAndPause()">Close</button>
@@ -51,6 +53,7 @@
 let popup = document.getElementById("pop");
 let message = document.getElementById("message");
 let head = document.getElementById("head");
+let title = document.getElementById("title");
 let song;
 
 function openPopup(){
