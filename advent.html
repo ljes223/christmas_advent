@@ -43,7 +43,7 @@
 		<div class="popup" id="pop">
 			<p id="head"></p>
 			<p id="message"></p>
-			<button class="close" onclick="closePopup()">Close</button>
+			<button class="close" onclick="closeAndPause()">Close</button>
 		</div>
 	</div>
 	
@@ -51,6 +51,7 @@
 let popup = document.getElementById("pop");
 let message = document.getElementById("message");
 let head = document.getElementById("head");
+let song;
 
 function openPopup(){
 	popup.classList.add("open_popup");
@@ -63,6 +64,12 @@ function closePopup(){
 function dailyPopup(day) {
 	openPopup();
 	showMessage(day);
+	playMusic(day);
+}
+
+function closeAndPause() {
+	closePopup();
+	pauseMusic();
 }
 
 const messages = [
@@ -111,6 +118,52 @@ function showMessage(day) {
 	} else {
 		message.textContent = "Sorry, it's not 2024 yet!";
 	}
+}
+
+const musicPaths = [
+		"mariah.mp3",
+		"music2",
+		"music3",
+		"music4",
+		"music5",
+		"music6",
+		"music7",
+		"music8",
+		"music9",
+		"music10",
+		"music11",
+		"music12",
+		"music13",
+		"music14",
+		"music15",
+		"music16",
+		"music17",
+		"music18",
+		"music19",
+		"music20",
+		"music21",
+		"music22",
+		"music23",
+		"music24",
+		"music25"
+	];
+
+function playMusic(day) {
+    if (song) 
+    {
+        song.pause();
+        song.currentTime = 0;
+    }
+    song = new Audio(musicPaths[day - 1]);
+    song.play();
+}
+
+function pauseMusic() {
+    if (song) 
+    {
+        song.pause();
+        song.currentTime = 0;
+    }
 }
 	
 </script>
