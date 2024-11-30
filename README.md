@@ -8,3 +8,5 @@ Here is what it looks like when you first open the page:
 
 Here is an example of the basic popup:
 ![image](https://github.com/user-attachments/assets/c399d86a-16ce-471d-9d45-bb149a0ef61d)
+
+I hope you like my calendar!
